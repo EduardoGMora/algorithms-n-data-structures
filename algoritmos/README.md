@@ -6,8 +6,8 @@ Este directorio contiene implementaciones de varios algoritmos de ordenamiento e
 
 1. **Bubble Sort** - [bubblesort.py](/algoritmos/bubblesort.py)
 2. **Insertion Sort** - [insertionsort.py](/algoritmos/insertionsort.py)
-3. **Merge Sort** - [mergeSort.py](/mergeSort.py)
-4. **Selection Sort** - [selectionsort.py](/selectionsort.py)
+3. **Merge Sort** - [mergeSort.py](/algoritmos/mergeSort.py)
+4. **Selection Sort** - [selectionsort.py](/algoritmos/selectionsort.py)
 
 ## Descripción de los Algoritmos
 
