@@ -1,4 +1,4 @@
-class node:
+class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
@@ -17,7 +17,7 @@ class LL:
         return False
 
     def agregartail(self, value):
-        new_node = node(value)
+        new_node = Node(value)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -26,7 +26,7 @@ class LL:
             self.tail = new_node
     
     def agregarhead(self, value):
-        new_node = node(value)
+        new_node = Node(value)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -50,13 +50,22 @@ class LL:
                     return None
 
             aft = pre.next
-            new_node = node(value)
+            new_node = Node(value)
             new_node.next = aft
             pre.next = new_node
 
     def eliminarhead(self):
         if self.head is None:
             return None
+
+        temp = self.head
+        if self.head == self.tail:
+            self.head = None
+            self.tail = None
+        else:
+            self.head = self.head.next
+
+        return temp.value
 
     def contar(self):
         temp = self.head
