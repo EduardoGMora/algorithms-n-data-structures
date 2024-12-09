@@ -1,15 +1,12 @@
+def consecutivesum(n):
+    times = 0
+    start = 1
 
-lista = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
-scores = {}
-for student in lista:
-        name, score = student
-        if score in scores:
-            scores[score].append(name)
-        else:
-            scores[score] = [name]
-                
-duplicados = {scr: nombres for scr, nombres in scores.items() if len(nombres) > 1}
+    while start * (start - 1) // 2 < n:
+        if (n - start * (start - 1) // 2) % start == 0:
+            times += 1
+        start += 1
 
-for score in duplicados:
-    for name in sorted(duplicados[score]):
-        print(name)
+    return times
+
+print(consecutivesum(int(input())))
