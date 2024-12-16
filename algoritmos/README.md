@@ -1,29 +1,31 @@
-# Algoritmos de Ordenamiento
+# Algorithms
+In this Repository I looking to practice and learn more about the sort and search algorithms. I want to understand how works each one and how or when I can use it.
 
-Este directorio contiene implementaciones de varios algoritmos de ordenamiento en Python. Estos algoritmos son útiles para entender cómo funcionan diferentes métodos de ordenamiento y para practicar su implementación con arreglos y otras estructuras de datos.
 
-## Algoritmos Implementados
+## Sort Algorithms
 
 1. **Bubble Sort** - [bubblesort.py](/algoritmos/bubblesort.py)
-2. **Insertion Sort** - [insertionsort.py](/algoritmos/insertionsort.py)
 3. **Merge Sort** - [mergeSort.py](/algoritmos/mergeSort.py)
+2. **Insertion Sort** - [insertionsort.py](/algoritmos/insertionsort.py)
 4. **Selection Sort** - [selectionsort.py](/algoritmos/selectionsort.py)
 
-## Descripción de los Algoritmos
+These Algorithms I implemented with arrays but it is possible to use other kind of data structures as Linked List, queues or stacks.
 
-### Bubble Sort
-El algoritmo Bubble Sort compara elementos adyacentes y los intercambia si están en el orden incorrecto. Este proceso se repite hasta que la lista está ordenada.
+### Descriptions
 
-### Insertion Sort
-El algoritmo Insertion Sort construye la lista ordenada de uno en uno, insertando cada nuevo elemento en su posición correcta.
+#### Bubble Sort
+The Bubble Sort algorithm compares an item with the next one and switch it if the first one is greater than the second one. This proccess repeats until the list is sorted.
 
-### Merge Sort
-El algoritmo Merge Sort divide la lista en mitades, ordena cada mitad y luego las combina en una lista ordenada.
+#### Merge Sort
+This algorithm is really useful and efficient for longer list, It works dividing the list in smaller lists and sorted each item, then It merges this lists and sorted again. The merge sort best known as divide and conquer, use the recursive call to compare each list and sorted until the first longer list be sorted.
 
-### Selection Sort
+#### Insertion Sort
+The Insertion sort receives a list and makes a sorted list
+
+#### Selection Sort
 El algoritmo Selection Sort selecciona el elemento más pequeño de la lista y lo intercambia con el primer elemento, luego repite el proceso con el resto de la lista.
 
-## Ejecución de los Algoritmos
+- Ejecución de los Algoritmos
 Cada archivo contiene un ejemplo de cómo ejecutar el algoritmo con una lista de 20 elementos desordenados y mide el tiempo de ejecución.
 
 ```python
@@ -32,8 +34,15 @@ Cada archivo contiene un ejemplo de cómo ejecutar el algoritmo con una lista de
     inicio = time.time()
     print(bublesort(lista))
     fin = time.time()
-    print(f'Tiempo de ejecución: {fin-inicio} segundos'´
+    print(f'Tiempo de ejecución: {fin-inicio} segundos'´)
 ```
 
-### Practicando con Otras Estructuras
-Además de arreglos, busco practicar estos algoritmos con otras estructuras de datos como listas enlazadas, pilas, colas, etc. Puedes encontrar implementaciones de estas estructuras en el directorio estructuras
+## Search Algorithms
+
+1. **DFS** - [DFS.py](/algoritmos/DFS.py)
+
+This algorithms are usually used for data structures as Binary trees or graphs, are really interesting and I really like the idea to know more about them.
+
+
+### Descriptions
+#### DFS
