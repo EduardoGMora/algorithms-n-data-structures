@@ -2,7 +2,7 @@ import time
 
 def mergeSort(arr) :
 
-    if arr is None:
+    if len(arr)<1:
         return
 
     if len(arr) > 1:
@@ -24,13 +24,13 @@ def mergeSort(arr) :
             k += 1
 
          # Copiar los elementos restantes de L, si los hay
-        for i in range(i, len(L)):
-            arr[k] = L[i]
+        while i < len(L):
+            arr[k]=L[i]
             i += 1
             k += 1
 
         # Copiar los elementos restantes de R, si los hay
-        for j in range(j, len(R)):
+        while j < len(R):
             arr[k] = R[j]
             j += 1
             k += 1
